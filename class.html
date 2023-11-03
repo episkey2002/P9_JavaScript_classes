@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Login or Logout </title>
+    </head>
+    <body>
+        <h1>Creating a class in JavaScript </h1>
+        <p id="display"> </p>
+        <script>
+            class User{
+                constructor(email,name,surname){
+                    this.email = email;
+                    this.name = name;
+                    this.surname = surname;
+                }
+                login(){
+                    return `${this.name} is logged in successfully`
+                }
+                logout(){
+                    return `${this.name} is logged out successfully`
+                }
+            }
+            let Shubham = new User("shubham@gamil.com","Shubham","Janjire");
+            let Karishma = new User("karishma@gamil.com","Karishma","Bhosle");
+
+            document.getElementById("display").innerHTML = Karishma.login();
+
+            console.log(shubham);
+            console.log(karishma);
+        </script>
+    </body>
+</html>
